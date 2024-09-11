@@ -1,51 +1,41 @@
-# Desafio: Contador de Números Pares
+# 3️⃣ Escrevendo as classes de um Jogo
 
-## Descrição
+**O Que deve ser utilizado**
 
-Você vai criar um programa que recebe uma lista de números inteiros e realiza as seguintes tarefas:
+- Variáveis
+- Operadores
+- Laços de repetição
+- Estruturas de decisões
+- Funções
+- Classes e Objetos
 
-1. **Contar os Números Pares:** Conte quantos números pares existem na lista.
-2. **Calcular a Soma dos Números Pares:** Calcule a soma de todos os números pares da lista.
-3. **Calcular a Média dos Números Pares:** Calcule a média dos números pares na lista. Se não houver números pares, a média deve ser considerada como 0.
+## Objetivo:
 
-## Especificações
+Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
 
-### Funções
+- nome
+- idade
+- tipo (ex: guerreiro, mago, monge, ninja )
 
-- `contar_pares(lista)`: Recebe uma lista de inteiros e retorna o número de elementos pares.
-- `soma_pares(lista)`: Recebe uma lista de inteiros e retorna a soma dos elementos pares.
-- `media_pares(lista)`: Recebe uma lista de inteiros e retorna a média dos elementos pares. Se não houver pares, retorna 0.
+além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
 
-### Variáveis
+- exibir a mensagem: "o {tipo} atacou usando {ataque}")
+- aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
+- e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
 
-- `lista`: Uma lista de números inteiros fornecida pelo usuário.
-- `total_pares`: O número total de números pares na lista.
-- `soma_total_pares`: A soma de todos os números pares na lista.
-- `media_total_pares`: A média dos números pares na lista.
-
-### Operadores
-
-- Utilizar operadores aritméticos para calcular a soma e a média.
-- Utilizar o operador de módulo (%) para verificar se um número é par.
-
-### Estrutura de Repetição
-
-- Utilize um loop para iterar sobre cada elemento da lista e verificar se o número é par.
-- Dentro do loop, atualize as variáveis `total_pares`, `soma_total_pares` e calcule a `media_total_pares` no final.
-
-## Entrada
-
-- Uma lista de números inteiros (por exemplo: `[1, 2, 3, 4, 5, 6]`).
+se mago -> no ataque exibir (usou magia)
+se guerreiro -> no ataque exibir (usou espada)
+se monge -> no ataque exibir (usou artes marciais)
+se ninja -> no ataque exibir (usou shuriken)
 
 ## Saída
 
-- O número de elementos pares na lista.
-- A soma dos números pares.
-- A média dos números pares.
+Ao final deve se exibir uma mensagem:
 
-## Exemplo
+- "o {tipo} atacou usando {ataque}"
+  ex: mago atacou usando magia
+  guerreiro atacou usando espada
 
-Para a lista `[1, 2, 3, 4, 5, 6]`:
 
-- Números pares: `[2, 4, 6]`
-- Contagem de pares: 3
+  ### Resultado
+  <img src="./image.png">
